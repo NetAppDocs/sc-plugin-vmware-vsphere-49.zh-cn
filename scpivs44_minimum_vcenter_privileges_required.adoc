@@ -1,0 +1,112 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_minimum_vcenter_privileges_required.html 
+keywords:  
+summary: 在开始部署适用于 VMware vSphere 的 SnapCenter 插件之前，您应确保具有所需的最低 vCenter 特权。 
+---
+= 所需的最低 vCenter 权限
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在开始部署适用于 VMware vSphere 的 SnapCenter 插件之前，您应确保具有所需的最低 vCenter 特权。
+
+
+
+== vCenter 管理员角色所需的特权
+
+数据存储库.AllocateSpace
+数据存储库。浏览
+数据存储库。删除
+数据存储库。文件管理
+数据存储库。mMove
+数据存储库。重命名
+扩展。注册
+扩展。注销
+extension.Update
+Host.Config.AdvancedConfig
+host.Config.Resources
+Host.Config.Settings
+host.Config.Storage
+host.local.CreateVM
+host.local.DeleteVM
+host.local.ReconfigVM
+网络。分配
+资源。应用程序建议
+资源。分配VMToPoool
+资源。CLDMigrate
+资源。热迁移
+Resource.QuerVMotion
+System.匿名
+系统。读取
+system.view
+任务。创建
+任务。更新
+VirtualMachine.Config.AddExistingDisk
+VirtualMachine.Config.AddNewDisk
+VirtualMachine.Config.AdvancedConfig
+VirtualMachine.Config.ReloadFromPath
+VirtualMachine.Config.RemoveDisk
+VirtualMachine.Config.Resource
+VirtualMachine.GuestOperations.Execute
+VirtualMachine.GuestOperations.Modify
+VirtualMachine.GuestOperations.Query
+VirtualMachine.interact。poweroff
+VirtualMachine.inter互动.PowerOn
+VirtualMachine.Inventory.Create
+VirtualMachine.Inventory.CreateFromExisting
+VirtualMachine.Inventory.Delete
+VirtualMachine.Inventory.Move
+VirtualMachine.Inventory.Register
+VirtualMachine.Inventory.Unregign
+VirtualMachine.State.CreateSnapshot
+VirtualMachine.State.RemoveSnapshot
+VirtualMachine.State.Re版本ToSnapshot
+
+
+
+== 适用于 VMware vCenter 的 SnapCenter 插件所需的特权
+
+|===
+
+
+| * 权限 * | *标签* 
+
+
+| netappSCC.Guest.RestoreFile | 子系统文件还原 
+
+
+| netappSCC.Recovery.MountUnMount | 挂载/卸载 
+
+
+| netappSCC.Backup.DeleteBackupJob | 删除资源组/备份 
+
+
+| netappSCC.Configure.ConfigureStorageSystems.Delete | 删除存储系统 
+
+
+| netappSCV视图 | 查看 
+
+
+| netappSCC.Recover.RecoverVM | 恢复VM 
+
+
+| netappSCC.Configure.ConfigureStorageSystems.AddUpdate | 添加/修改存储系统 
+
+
+| netappSCC.Backup.BackupNow | 立即备份 
+
+
+| netappSCC.Guest.Configure | 子系统配置 
+
+
+| netappSCC.Configure.ConfigureSnapCenterServer | 配置SnapCenter 服务器 
+
+
+| netappSCC.Backup.BackupScheduleed | 创建资源组 
+|===
