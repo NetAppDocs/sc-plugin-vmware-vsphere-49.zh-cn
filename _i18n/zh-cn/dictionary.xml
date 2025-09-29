@@ -92,11 +92,6 @@
   <block id="c4436d4a190778b7ec1e9461f6454bdd" category="cell">vCenter Server</block>
   <block id="df86b612dee850ddbf3bd636d14cd09e" category="cell">选择一个 vCenter Server 。</block>
   <block id="49ee3087348e8d44e1feda1917443987" category="cell">Name</block>
-  <block id="306239feaf3736ab46598c0abf660ee1" category="cell">输入资源组的名称。
-请勿在虚拟机、数据存储库、策略、
-备份或资源组名称：
-% 和 * $ # @ ！\ / ： * ？" &lt; &gt; - [ 垂直条 ] ； " ，。允许使用下划线字符（ _ ）。具有特殊字符的虚拟机或数据存储库名称会被截断，因此很难搜索特定备份。
-在链接模式下，每个 vCenter 都有一个单独的 SnapCenter VMware 插件存储库。因此，您可以在 vCenter 中使用重复的名称。</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Description</block>
   <block id="b1358d1843f648e7ea781a21a690cdd0" category="cell">输入资源组的问题描述。</block>
   <block id="96d008db67fc0b5551a926842bbb6a71" category="cell">通知</block>
@@ -1314,7 +1309,6 @@ VirtualMachine.State.Re版本ToSnapshot</block>
   <block id="1d92d0cbfdf6166c05997268d3378fe0" category="list-text">链接模式</block>
   <block id="35f1c688325b0062756b2d7b0d00be28" category="paragraph">在链接模式下，每个 vCenter 都有一个单独的虚拟设备。因此，您可以在 vCenter 中使用重复的名称。但是，您必须在与资源组相同的 vCenter 中创建策略。</block>
   <block id="9efc9e0c08da510b5195bb9dc4b1b7c2" category="list-text">不支持的字符</block>
-  <block id="69a02b2d668a0ebee1d9ac100a00074c" category="paragraph">请勿在虚拟机，数据存储库，集群，策略，备份， 或资源组名称： % &amp; * $ # @ ！\ / ： * ？" &lt; &gt;-| ； " ，。</block>
   <block id="a051f3eeac4a83ec1f5d55c7aeba6f06" category="paragraph">允许使用下划线字符（ _ ）。</block>
   <block id="a923c6bf503ee78e9fc4b4479248cff6" category="list-text">指定保留设置。</block>
   <block id="2eff7650afc7423cc6df7c21eaaf0430" category="admonition">如果计划启用 SnapVault 复制，则应将保留数量设置为 2 个或更多备份。如果将保留计数设置为 1 个要保留的备份，则保留操作可能会失败。这是因为在将较新的 Snapshot 副本复制到目标之前，第一个 Snapshot 副本是 SnapVault 关系的参考 Snapshot 副本。</block>
@@ -1585,7 +1579,6 @@ SCV 视图
   <block id="86f5d700774abd1b4b1161e6afcd312e" category="section-title">修改资源组</block>
   <block id="1850764f60496630a671ed4a4ca36a90" category="paragraph">您可以在 vCenter 中的资源组中删除或添加资源，断开或附加策略，修改计划或修改任何其他资源组选项。</block>
   <block id="683a572529e7ee01c3f3b2f6e84ee453" category="paragraph">如果要修改资源组的名称，请勿在 VM ，数据存储库，策略，备份或资源组名称中使用以下特殊字符：</block>
-  <block id="bf6bb853aafb837a490acb97d9acbf87" category="paragraph">% 和 * $ # @ ！\ / ： * ？" &lt; &gt;-| ； " ，。</block>
   <block id="bc967eed1e1f8494f71a02de0d06a1ba" category="list-text">在 * 编辑资源组 * 向导的左侧列表中，单击要修改的类别并输入所做的更改。</block>
   <block id="e71911e6fc1645b76466cbac653dbb12" category="paragraph">您可以在多个类别中进行更改。</block>
   <block id="cb0503d668bf3e03dd4da3d424936f20" category="list-text">单击 * 下一步 * ，直到显示摘要页面，然后单击 * 完成 * 。</block>
@@ -2192,7 +2185,6 @@ SnapCenter VMware插件不支持在不同集群上使用多个同名Storage VM�
   <block id="0b440f7132b6fe79c573c20ac70e3650" category="paragraph"><block ref="0b440f7132b6fe79c573c20ac70e3650" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1d25235da54411fda3f47e1c47b94db2" category="list-text">在配置选项卡上，选择一个备份，然后单击*重 命名*。</block>
   <block id="27947ec6e4013d1b08faee7e509cae9e" category="list-text">在 * 重命名备份 * 对话框中，输入新名称，然后单击 * 确定 * 。</block>
-  <block id="f8ffb952d62ac560c6adb8ac7e15a58e" category="paragraph">请勿在虚拟机、数据存储库、策略、备份或资源组名称中使用以下特殊字符：&amp;*$#@！\ / ： * ？" &lt; &gt;-| ； " ，。允许使用下划线字符（ _ ）。</block>
   <block id="de00c1e27be1485dd099e4cd2aaa554d" category="section-title">删除备份</block>
   <block id="811a38ca6a4a37270419c2834515cf5c" category="paragraph">如果您不再需要备份来执行其他数据保护操作，则可以删除适用于 VMware vSphere 的 SnapCenter 插件备份。您可以同时删除一个备份或多个备份。</block>
   <block id="4b3cb5948249f5d59292e97ced52522d" category="paragraph">您不能删除已挂载的备份。您必须先卸载备份，然后才能将其删除。</block>
@@ -2407,4 +2399,8 @@ IPv6示例：<block ref="f7a108079a0dc952ef09921776f4796f" prefix=" " category="
   <block id="a3d53cfe9124531cb5f9bbfefe704326" category="sidebar">用于修改内置计划的 REST API 工作流</block>
   <block id="3da6944b1baaec4beb70694ac307fd1f" category="sidebar">升级到同一版本的新修补程序</block>
   <block id="147e8233cabd13a871f077b92a377a39" category="sidebar">适用于VMware vSphere 4.9的SnapCenter插件文档</block>
+  <block id="2c6c18c9ea36047e0562b8c63f8cdc3b" category="paragraph">请勿在虚拟机、数据存储区、群集、策略、备份或资源组名称中使用以下特殊字符：% &amp; * $ # @ ! \ / ： * ？  “ &lt; &gt; - | ; ' ，以及空格。</block>
+  <block id="6f19ce572bcae00ee63d0e21fd68e1b0" category="cell">输入资源组的名称。请勿在虚拟机、数据存储区、策略、备份或资源组名称中使用以下特殊字符：% &amp; * $ # @ ! \ / ： * ？“&lt; &gt; - [竖线]；'，和空格。允许使用下划线字符 (_)。带有特殊字符的虚拟机或数据存储名称会被截断，这使得搜索特定备份变得困难。在链接模式下，每个 vCenter 都有一个单独的SnapCenter VMware 插件存储库。因此，您可以在各个 vCenter 中使用重复的名称。</block>
+  <block id="9d9d361ca66b8af5110eb490c5e40c1a" category="paragraph">请勿在虚拟机、数据存储区、策略、备份或资源组名称中使用以下特殊字符：&amp; * $ # @ ! \ / ： * ？ “ &lt; &gt; - | ; ' ，以及空格。允许使用下划线字符 (_)。</block>
+  <block id="8651a2d0c6ade87f04ae0bca90386289" category="paragraph">% &amp; * $ # @ ！\ / ： * ？ “ &lt; &gt; - | ; ' ，以及空格。允许使用下划线字符 (_)。</block>
 </blocks>
